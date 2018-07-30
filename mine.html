@@ -1,0 +1,297 @@
+<html>
+<style type=text/css>
+
+.button-group button {
+	background-color: rgb(255, 255, 255); /* Green background */
+    
+    color: black; /* White text */
+    padding: 10px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.vagon2-group button {
+    background-color: #4CAF50; /* Green background */
+    
+    color: white; /* White text */
+    padding: 10px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+
+/* Clear floats (clearfix hack) */
+.vagon2-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+.button-group button:last-child {
+	border-top: 1px solid black; /* Green border */
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none; /* Prevent double borders */
+	margin-left: 10px;
+	margin-bottom: 10px;
+	}
+
+.button-group button:first-child {
+    border-top: 1px solid black; /* Green border */
+    border-bottom: 1px solid black; /* Green border */
+    border-left: 1px solid black; /* Green border */
+    border-right: none; /* Prevent double borders */
+    margin-bottom: 10px;
+	margin-left: 10px;
+  } 
+   
+
+/* Add a background color on hover */
+.button-group button:hover {
+    background-color: rgb(100, 10, 50););
+}
+
+/* Clear floats (clearfix hack) */
+.button-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*
+.vagon2-group .button:nth-child(7) {
+    border-top: 1px solid black; /* Green border */
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none; /* Prevent double borders */
+	margin-left: 10px;
+	margin-bottom: 10px;
+} else{
+    border-top: 1px solid black; /* Green border */
+    border-bottom: 1px solid black; /* Green border */
+    border-left: 1px solid black; /* Green border */
+    border-right: none; /* Prevent double borders */
+    margin-bottom: 10px;
+	margin-left: 10px;
+}
+*/
+/* Add a background color on hover */
+.vagon2-group button:hover {
+    background-color: #3e8e41;
+}
+
+</style>
+
+<title> Rezervari bilete tren </title>
+
+<head>
+<h2>Bine ati venit!</h2>
+<br></br>
+ Va rugam sa completati pasii de mai jos pentru a va putea rezerva biletul cu locul preferat de dumneavoastra online!
+<br></br>
+<br></br>
+</head>
+
+<body>
+
+<div> 1. Autentificare
+
+
+<form data-dojo-attach-point="containerNode" data-dojo-attach-event="onreset:_onReset,onsubmit:_onSubmit" id="dijit_form_Form_0" widgetid="dijit_form_Form_0">
+        <table><tr>
+		<td><div class="dijitReset dijitInputField dijitInputContainer"><span class="dijitPlaceHolder dijitInputField">E-mail    </span><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" name="email" type="email" tabindex="0" id="email" aria-required="true" value="" aria-invalid="false"></div>
+		</td>
+        <td><div class="dijitReset dijitInputField dijitInputContainer"><span class="dijitPlaceHolder dijitInputField">Prenume   </span><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" name="first_name" type="text" tabindex="0" id="first_name" aria-required="true" value="" aria-invalid="false"></div>
+        </td>
+		<td><div class="dijitReset dijitInputField dijitInputContainer"><span class="dijitPlaceHolder dijitInputField">Nume      </span><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" name="last_name" type="text" tabindex="0" id="last_name" aria-required="true" value="" aria-invalid="false"></div>
+        </td>
+		</tr></table>
+		<br></br>
+		<label for="rememberMe" title="Nu selectați dacă folosiți un computer public sau daca nu doriți sa fie încărcate datele de contact automat la următoarea vizită.">Reține datele
+            <div class="dijit dijitReset dijitInline dijitCheckBox" role="presentation" widgetid="rememberMe"><input name="rememberMe" type="checkbox" role="checkbox" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" value="on" tabindex="0" id="rememberMe" title="Nu selectați dacă folosiți un computer public sau daca nu doriți sa fie încărcate datele de contact automat la următoarea vizită." style="user-select: none;"></div>
+        </label>
+		
+</form>
+
+
+<br></br> </div>
+
+
+
+<div> 2. Traseu
+
+<form data-dojo-attach-point="containerNode" data-dojo-attach-event="onreset:_onReset,onsubmit:_onSubmit" id="dijit_form_Form_0" widgetid="dijit_form_Form_0">
+        <table><tr>
+		<td><div class="dijitReset dijitInputField dijitInputContainer"><span class="dijitPlaceHolder dijitInputField">Data</span><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" name="email" type="email" tabindex="0" id="email" aria-required="true" value="" aria-invalid="false"></div>
+		</td>
+        <td><div class="dijitReset dijitInputField dijitInputContainer"><span class="dijitPlaceHolder dijitInputField">Plecare</span><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" name="first_name" type="text" tabindex="0" id="first_name" aria-required="true" value="" aria-invalid="false"></div>
+        </td>
+		<td><div class="dijitReset dijitInputField dijitInputContainer"><span class="dijitPlaceHolder dijitInputField">Sosire</span><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" name="last_name" type="text" tabindex="0" id="last_name" aria-required="true" value="" aria-invalid="false"></div>
+        </td>
+		<td>Plata se va face in tren.</td>
+		</tr></table>
+		
+</form>
+
+<div class="title">Vă rugăm selectați ruta călătoriei:</div>
+    <form data-dojo-attach-point="containerNode" data-dojo-attach-event="onreset:_onReset,onsubmit:_onSubmit" id="dijit_form_Form_1" widgetid="dijit_form_Form_1">
+    <div class="route"><div class="dijit dijitReset dijitInline dijitRadio" role="presentation" widgetid="dijit_form_RadioButton_0"><input name="route" type="radio" role="radio" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" id="dijit_form_RadioButton_0" value="32" style="user-select: none;"></div><label for="dijit_form_RadioButton_0">C1: Craiova (05:55) - Bucuresti Nord (09:16-09:28) - Brasov (11:55)</label></div>
+	<div class="route"><div class="dijit dijitReset dijitInline dijitRadio" role="presentation" widgetid="dijit_form_RadioButton_1"><input name="route" type="radio" role="radio" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" id="dijit_form_RadioButton_1" value="33" style="user-select: none;"></div><label for="dijit_form_RadioButton_1">B1: Brasov (14:55) - Bucuresti Nord (17:24-17:42) - Craiova (20:49)</label></div>
+	<div class="route"><div class="dijit dijitReset dijitInline dijitRadio dijitRadioChecked dijitChecked" role="presentation" widgetid="dijit_form_RadioButton_2"><input name="route" type="radio" role="radio" aria-checked="true" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" id="dijit_form_RadioButton_2" value="41" style="user-select: none;"></div><label for="dijit_form_RadioButton_2" class="">A1: Constanta (16:00) - Bucuresti Nord (18:14-18:32) - Craiova (21:53)</label></div>
+	<div class="route"><div class="dijit dijitReset dijitInline dijitRadio" role="presentation" widgetid="dijit_form_RadioButton_3"><input name="route" type="radio" role="radio" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" id="dijit_form_RadioButton_3" value="43" style="user-select: none;"></div><label for="dijit_form_RadioButton_3">C2: Craiova (06:05) - Bucuresti Nord (09:16-10:20) - Constanta (12:33)</label></div></form>
+    <div class="announcements" data-dojo-attach-point="announcements">
+    </div>
+
+<br></br> </div>
+
+
+<div> 3. Locurile
+
+<p>Primul meu vagon de tren!</p>
+<div class="button-group" style="width:100%">
+  <span><button style="width:2%">1</button>
+  <button style="width:2%">8</button></span>
+  <span><button style="width:2%">9</button>
+  <button style="width:2%">16</button></span>
+  
+  <span><button style="width:2%">17</button>
+  <button style="width:2%">24</button></span>
+  <span><button style="width:2%">25</button>
+  <button style="width:2%">32</button></span>
+  
+  <span><button style="width:2%">33</button>
+  <button style="width:2%">40</button></span>
+  <span><button style="width:2%">41</button>
+  <button style="width:2%">48</button></span>
+  
+  <span><button style="width:2%">49</button>
+  <button style="width:2%">56</button></span>
+  <span><button style="width:2%">57</button>
+  <button style="width:2%">64</button></span>
+  
+  <span><button style="width:2%">65</button>
+  <button style="width:2%">72</button></span>
+  <span><button style="width:2%">73</button>
+  <button style="width:2%">80</button></span>
+</div>
+
+
+
+<div class="button-group" style="width:100%">
+  <span><button style="width:2%">2</button>
+  <button style="width:2%">7</button></span>
+  <span><button style="width:2%">10</button>
+  <button style="width:2%">15</button></span>
+  
+  <span><button style="width:2%">18</button>
+  <button style="width:2%">23</button></span>
+  <span><button style="width:2%">26</button>
+  <button style="width:2%">31</button></span>
+  
+  <span><button style="width:2%">34</button>
+  <button style="width:2%">39</button></span>
+  <span><button style="width:2%">42</button>
+  <button style="width:2%">47</button></span>
+  
+  <span><button style="width:2%">50</button>
+  <button style="width:2%">55</button></span>
+  <span><button style="width:2%">58</button>
+  <button style="width:2%">63</button></span>
+  
+  <span><button style="width:2%">66</button>
+  <button style="width:2%">71</button></span>
+  <span><button style="width:2%">74</button>
+  <button style="width:2%">79</button></span>
+</div>
+<br></br>
+
+
+
+<div class="button-group" style="width:100%">
+  <span><button style="width:2%">3</button>
+  <button style="width:2%">6</button></span>
+  <span><button style="width:2%">11</button>
+  <button style="width:2%">14</button></span>
+  
+  <span><button style="width:2%">19</button>
+  <button style="width:2%">22</button></span>
+  <span><button style="width:2%">27</button>
+  <button style="width:2%">30</button></span>
+  
+  <span><button style="width:2%">35</button>
+  <button style="width:2%">38</button></span>
+  <span><button style="width:2%">43</button>
+  <button style="width:2%">46</button></span>
+  
+  <span><button style="width:2%">51</button>
+  <button style="width:2%">54</button></span>
+  <span><button style="width:2%">59</button>
+  <button style="width:2%">62</button></span>
+  
+  <span><button style="width:2%">67</button>
+  <button style="width:2%">70</button></span>
+  <span><button style="width:2%">75</button>
+  <button style="width:2%">78</button></span>
+</div>
+
+
+
+<div class="button-group" style="width:100%">
+  <span><button style="width:2%">4</button>
+  <button style="width:2%">5</button></span>
+  <span><button style="width:2%">12</button>
+  <button style="width:2%">13</button></span>
+  
+  <span><button style="width:2%">20</button>
+  <button style="width:2%">21</button></span>
+  <span><button style="width:2%">28</button>
+  <button style="width:2%">29</button></span>
+  
+  <span><button style="width:2%">36</button>
+  <button style="width:2%">37</button></span>
+  <span><button style="width:2%">44</button>
+  <button style="width:2%">45</button></span>
+  
+  <span><button style="width:2%">52</button>
+  <button style="width:2%">53</button></span>
+  <span><button style="width:2%">60</button>
+  <button style="width:2%">61</button></span>
+  
+  <span><button style="width:2%">68</button>
+  <button style="width:2%">69</button></span>
+  <span><button style="width:2%">76</button>
+  <button style="width:2%">77</button></span>
+</div>
+
+<br></br> </div>
+
+<p> Al doilea tip de vagon de tren! </p>
+
+<div class="vagon2-group" style="width:100%">
+
+	<button style="width:2%">1</button>
+	<button style="width:2%">8</button>
+	
+	<button style="width:2%">9</button>
+	<button style="width:2%">16</button>
+	
+	<button style="width:2%">17</button>
+	<button style="width:2%">24</button>
+	
+	<button style="width:2%">25</button>
+	<button style="width:2%">32</button>
+	
+	<button style="width:2%">33</button>
+	<button style="width:2%">40</button>
+
+</div>
+
+<div class="vagon2-group" style="width:100%">
+
+</div>
+
+<br></br>
+</body>
+</html>
